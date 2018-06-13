@@ -14,10 +14,13 @@ document.onkeyup = function(event) {
     //How user adds to the win
     if (userGuess === computerGuess) {
         win++;
-    } 
+    }
+    else if (userGuess != computerGuess) {
+        numGuesses--;
+    }
     //How user losses 
      else  {
-         numGuesses--;
+         alert("Try Again!");
      }
 
      if (numGuesses === 0){
